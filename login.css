@@ -1,0 +1,65 @@
+body {
+    margin:0;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.items-container {
+    background-color: rgba(0, 0, 0, 0.062);
+    width:384px;
+    margin:0 auto;
+    margin-top:160px;
+    display:flex;
+    flex-direction: column;
+    height: 55%;
+    border-radius: 10px;
+    padding:0 10px;
+}
+
+.title {
+    margin-bottom:80px;
+}
+
+.continueWith {
+    display: flex;
+    flex-direction: column;
+}
+
+.continueWith button{
+    all:unset;
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 4px;
+    font-size:24px;
+    padding:10px 0px;
+}
+
+.continueWith .facebook{
+    margin-top:20px;
+
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.signin-form input {
+    font-size:24px;
+    padding:10px 0px;
+}
+
+.signin-form .signIn-button{
+    all:unset;
+    background-color: palevioletred;
+    border-radius: 4px;
+    font-size:24px;
+    padding:10px 0px;
+}
+
+span {
+    margin-top:32px;
+    font-size:14px;
+}
+
