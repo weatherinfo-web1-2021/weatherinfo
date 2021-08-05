@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+/* navbar */
+.navBar {
+  background-color: rgba(127, 255, 212, 0.5);
+  height: 65px;
+}
+
+/* aside */
+.main aside {
+  width: 250px;
+  padding: 20px;
+  display: Flex;
+  flex-direction: column;
+  height: 100vh;
+  border-right: 5px solid black;
+}
+
+.main aside button {
+  margin-top: 14px;
+  padding: 17px 30px;
+  font-size: 15px;
+  border: none;
+}
+
+/* sections */
+
+.sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 50px;
+}
+
+.section {
+  border: 1px solid black;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.233);
+  padding: 20px;
+}
+
+.section1 {
+  display: Flex;
+  align-items: center;
+}
+
+.section button {
+  padding: 5px 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.199);
+  padding: 10px;
+}
+
+.section1 .profile-avatar {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-right: 30px;
+}
+
+.section2 {
+  position: relative;
+}
+
+.section2 form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+
+.section2 button {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.chagePassword {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.chagePassword h3,
+.chagePassword span {
+  display: inline;
+}
+
+.chagePassword form {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.chagePassword form input {
+  width: 33%;
+}
+
+.chagePassword button {
+  padding: 5px 40px;
+  width: 200px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
