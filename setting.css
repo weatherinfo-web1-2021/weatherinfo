@@ -15,7 +15,7 @@ body {
 
 /* navbar */
 .navBar {
-  background-color: rgba(127, 255, 212, 0.5);
+  background-color: royalblue;
   height: 65px;
 }
 
@@ -26,7 +26,9 @@ body {
   display: Flex;
   flex-direction: column;
   height: 100vh;
-  border-right: 5px solid black;
+  border-right: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .main aside button {
@@ -34,6 +36,13 @@ body {
   padding: 17px 30px;
   font-size: 15px;
   border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+}
+.btn:hover{
+  background-color:royalblue;
+  color: white;
+
 }
 
 /* sections */
@@ -44,36 +53,77 @@ body {
   flex-direction: column;
   gap: 60px;
   padding: 50px;
+  background-image: url("images/clouds.jpg");
 }
 
 .section {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 200px;
-  background: rgba(0, 0, 0, 0.233);
+  background: white;
   padding: 20px;
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 10px;
 }
 
-.section1 {
+div .section1 {
   display: Flex;
   align-items: center;
+  border-radius: 10px; 
 }
 
-.section button {
+.section .changed {
   padding: 5px 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+.section .changed:hover{
+  background-color: royalblue;
+  color: white;
+  
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.199);
+  background: rgb(239, 239, 239);
   padding: 10px;
 }
 
-.section1 .profile-avatar {
+/* .section1 .profile-avatar {
   width: 100px;
   height: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border-radius: 50px;
+  border: 5px solid rgb(154, 208, 244);
   margin-right: 30px;
+} */
+
+.profileImg{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-right: 30px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.profile-text{
+  display: flex;
+  flex-direction: column;
+} 
+
+.edit{
+  /* position: absolute; */
+  width: 30px;
+  height: 30px;
+  float: right;
+  /* right: 20%; */
+}
+
+.edit:hover{
+  transform: scale(1.1);
 }
 
 .section2 {
@@ -91,6 +141,17 @@ body {
   right: 20px;
   bottom: 10px;
 }
+
+input[type="text"]{
+  border: none;
+  background-color:rgb(239, 239, 239);
+}
+
+input[type="tel"]{
+  border: none;
+  background-color:rgb(239, 239, 239);
+}
+
 
 .chagePassword {
   height: 200px;
@@ -122,4 +183,12 @@ body {
   position: absolute;
   right: 20px;
   bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.chagePassword button:hover{
+  background-color: royalblue;
+  color: white;
+  
 }

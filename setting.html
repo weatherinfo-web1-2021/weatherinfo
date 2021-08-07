@@ -14,24 +14,27 @@
     <!-- side bar -->
     <main class="main">
     <aside>
-        <button>
+        <button class="btn">
             내 프로필
         </button>
-        <button>
+        <button class="btn">
             내 멤버십
         </button>            
-        <button>
+        <button class="btn">
             알림 설정
         </button>
     </aside>
 
     <!-- contents -->
 <div class="sections">
-    <section class="section section1">
-        <div class='profile-avatar'></div>
-        <div class="profile-text">
-            <h2 class="nickname">병아리</h2>
-            <h3>아직 다 자라지 않은 닭의 새끼</h3>
+    <section class="section">
+        <img class="edit" src="images/pencil.png" alt="프로필 사진">
+        <div class="section1">
+            <img class="profileImg" src="images/profile.png" alt="프로필 사진">
+            <div class="profile-text">
+                <h2 class="nickname">병아리</h2>
+                <h3>아직 다 자라지 않은 닭의 새끼</h3>
+            </div>
         </div>
     </section>
 
@@ -51,10 +54,10 @@
             </div>
             <div class="info setting__phoneNumber">
                 <span>전화번호</span>
-            <input type="number">
+            <input type="tel" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
             </div>
         </form>
-            <button>변경
+            <button class="changed">변경
             </button>
         
     </section>
@@ -63,9 +66,9 @@
         <h3>비밀번호 변경</h3>
         <span>영문 숫자 조합 8자 이상 입력해주세요</span>
         <form action="">
-            <input type="number">
-            <input type="number">
-            <input type="number">
+            <input type="password" placeholder="이전 비밀번호">
+            <input type="password" placeholder="새 비밀번호">
+            <input type="password" placeholder="비밀번호 확인">
         </form>
         <button>비밀번호 변경</button>
     </section>
